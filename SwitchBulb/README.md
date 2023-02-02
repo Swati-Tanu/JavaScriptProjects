@@ -24,18 +24,25 @@ A simple DOM application using onclick functionality. The application allows you
 A short video demo of the complete project:
 
 
+https://user-images.githubusercontent.com/112818778/215687300-15b2d008-0795-4fa2-b562-a08e5149f55f.mp4
+
+
+
 
 
 
 ## Screenshots
 
 A couple of Screenshots:
+<img width="923" alt="Bulb Off" src="https://user-images.githubusercontent.com/112818778/215686868-d03e2eb4-9e4c-4d69-b28a-60afafc231c8.png">
+
+<img width="933" alt="Bulb On" src="https://user-images.githubusercontent.com/112818778/215686905-f8f7476d-2625-47ef-9af8-38fb39e41626.png">
 
 
 ## Deployment
 
-The deployed link of the project:
-#### switchbulb.netlify.app
+The deployed link of the project: 
+#### https://switchbulb.netlify.app/
 
 ## Contributions
 
