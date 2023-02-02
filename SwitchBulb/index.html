@@ -5,40 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Switch Bulb</title>
-    <style>
-        .center{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 20%;
-        }
-        .button{
-            padding: 10px;
-            background-color: green;
-            color: white;
-            font-weight: bold;
-            font-size: large;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color: black">
     <img id="bulb" src="Bulb_Off.jpg" alt="" class="center">
     <button id="toggle" class="center button">Turn On</button>
+
+    <script src="index.js"></script>
 </body>
 </html>
 
-<script>
-    let btn = document.getElementById("toggle");
-    let bulb = document.getElementById("bulb");
-    btn.addEventListener("click",toggleBulb)
-
-    function toggleBulb(event){
-        if(btn.textContent.includes("On")){
-        bulb.src = "Bulb_On.jpg";
-        btn.textContent = "Turn Off";
-        }else{
-        bulb.src = "Bulb_Off.jpg";
-        btn.textContent = "Turn On";
-        }
-    }
-</script>
