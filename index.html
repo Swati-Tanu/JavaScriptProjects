@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <button onclick="myfun()">Click Me</button>
+    <br><br>
+    <button onmouseover="myfun1()">Mouseover</button>
+    <br><br>
+    <button onmousedown="myfun2()">Mousedown</button>
+    <br><br>
+    <button onmouseout="myfun3()">Mouseout</button>
+    <br>
+    <br>
+    <form name="example">
+        <input type="text" size="20" name="calculator">
+        <input type="button" name="B1" value="Calculate" onclick="cal()">
+        <input type="reset" name="B2" value="Reset">
+        Answer :  <input type="text" name="answer" size="20">
+    </form>
+    <br>
+    <input type="button" onclick="myfun4()" value="Redirect">
+    <br>
+    <br>
+    <input type="button" onclick="confirmation()" value="Alert">
+    <br>
+    <br>
+    <input type="button" onclick="warning()" value="Prompt">
+    <br>
+    <br>
+    <form name="myform" onsubmit="return validation()" >
+        Username: <input type="text" value="null" name="" id="user"> 
+        <span id="username"></span>
+        <br>
+        <br>
+        Password: <input type="password" value="null" name="" id="pd">
+        <span id="password"></span>
+        <br>
+        <br>
+        <input type="submit" value="Submit" name="" id="">
+        <br>
+    </form>
+    <br>
+    <script src="index.js"></script>
+</body>
+</html>
