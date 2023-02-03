@@ -142,5 +142,21 @@ let newarr = data.map((currElem, index, array) => {
 console.log("Multiplied by 2, greater than 10: ",newarr);
 
 //reduce(); It returns single value. We ue it to flatten an array, to convert the 3D/2D array into single dimentional array. It take four arguments: accumulator, current value, current index, source array and initial value.
+let reducedData = data.reduce((acc, currElem, index, array) => {
+    acc = acc + currElem;
+    return acc;
+},0)
+console.log(reducedData);
 
+//How to flatten an array
+//Here using concat() and reduce() to achieve it.
+const matrix = [
+    ['a', 'b'],
+    ['c', 'd'],
+    ['e', 'f']
+];
 
+let flatArr = matrix.reduce((acc, currVal) => {
+    return acc.concat(currVal)
+});
+console.log(flatArr);
