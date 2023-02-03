@@ -132,6 +132,22 @@ funExp;
 //ES6
 //let & const, template string, default arguments, rest & spread operators, destructuring, object properties, arrow function.
 
+//Default parameter allow named parameter to be initialised with default values if no value or undefined is passed.
+
+function mult(a,b,c=5){
+    return a*b*c;
+}
+
+console.log(mult(3,3)) //The argument will always be paased from first parameter so always put default parameter value at last parameter.
+
+
+
+
+
+
+
+
+
 
 
 
