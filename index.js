@@ -130,7 +130,29 @@ document.write("Random no.: " + l);
 document.write('<br>');
 document.write('<br>');
 
-//Dates
+//Date Methods (get and set) & Time Methods (get and set)
+//Creating Date Object: 4 ways
+
+//1. new Date();
+let currDate = new Date();
+console.log(currDate); //2023-02-03T16:37:29.760Z: T and Z is TimeZone GMT+0530(IST)
+console.log(currDate.toLocaleString()); //3/2/2023, 10:14:20 pm: It helps to display in the Terminal itself, no need to go to the browse.
+console.log(currDate.toString()); //Fri Feb 03 2023 22:14:59 GMT+0530 (India Standard Time)
+console.log(Date.now()); //1675442763301: returns time in numeric value in miliseconds since January 1, 1970 00:00:00 UTC
+
+//2. new Date(year, month, day, hours, minutes, seconds, miliseconds): this takes 7 arguments, we can pass less too. But passing month argument is necessary.
+//In JavaScript the count of month starts from 0.
+let d = new Date(2018, 11, 24, 10, 33, 30, 0);
+console.log(d.toLocaleString()); //24/12/2018, 10:33:30 am
+
+//3. new Date(milliseconds);
+let milli = new Date(1675442763301);
+console.log(milli); //2023-02-03T16:46:03.301Z
+
+//4. new Date(date string);
+let milli1 = new Date('2023-02-03T16:46:03.301Z');
+console.log(milli1); //2023-02-03T16:46:03.301Z
+
 document.write(Date());
 document.write('<br>');
 var dt = new Date();
