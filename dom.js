@@ -51,6 +51,31 @@ document.body.previousElementSibling
 //Main diffrence: What if we want to get content of third li?
 //It can be achieved by querySelector() but not by getElementById() since there is no ID. 
 
-//Event Object: There are 4 ways of writing Events in Js.
+//Event Object: It is the parent object of the event object. Eg: MouseEvent, focusEvent, KeyboardEvent, etc. There are 4 ways of writing Events in Js.
+//1. Using alert()
+//2. By calling a function
+//3. Using Inline events: varName.onclick = function(){}
+//4. Using Event Listeners : addEventListener("click",() => {})
+//The difference between 3rd and 4th is that the function gets overwritten in 3rd, means if it's called with more than one event then only bottom event will be executed.
+
+console.log(event);
+console.log(event.target);
+console.log(event.type);
+console.log(event.key);
+
+//Mouse Event: mouseUp, mouseEnter, mouseLeave, mouseDown, mouseOut, mouseOver, mouseClick.
+
+//Keyboard Event: onkeypress, onkeydown, onkeyup;
+
+//Input Events: onchange
+
+//Time based event: setTimeout(), setInterval(), clearTimeout(), clearInterval().
+
+
+
+
+
+
+
 
 

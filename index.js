@@ -65,7 +65,7 @@ function myfun2(){
     document.write('Mousedowned!');
 }
 document.write('<br>');
-
+//Mouseup, Mouseenter, Mouseleave, 
 function myfun3(){
     document.write('Mouseout!');
 }
