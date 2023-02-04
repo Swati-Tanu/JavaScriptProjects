@@ -7,8 +7,14 @@
     <title>Document Object Model</title>
 </head>
 <body>
-    
-
-    <script src="dom.js"></script>
+<!--History Object of BOM-->
+<button class="click" onclick="goback()">Go Back</button>
+<p>Notice that clicking on the button will redirect you to the previous visited page</p>
+<script>
+    function goback(){
+        window.history.back();
+    }
+</script>
+<script src="dom.js"></script>
 </body>
 </html>
