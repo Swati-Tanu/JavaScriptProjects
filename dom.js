@@ -69,7 +69,49 @@ console.log(event.key);
 
 //Input Events: onchange
 
-//Time based event: setTimeout(), setInterval(), clearTimeout(), clearInterval().
+//Difference between onclick and addEventListener
+//Same as 3rd way and 4th way explanation as above.
+
+//Time based event: setTimeout(()=>{},millisecond), setInterval(()=>{},millisecond), clearTimeout(), clearInterval().
+
+//OOPs in JS
+//Object literals is a key-value pair data structure.
+
+//this Object - The def of this object is that it contain the current context. It can have different values depending on where it is placed. 
+
+console.log(this); //refers to current context which is in this case the global object (window in case of browsers).
+
+function myName(){
+    console.log(this);
+}
+myName(); //window
+
+let name = 'Aman';
+function name(){
+    console.log(this.name);
+}
+name(); //Aman
+
+let obj = {
+    myAge : 24(),
+    myname(){
+        console.log(this);
+    }
+}
+obj.myname(); //obj {...}
+
+//this object will not work with arrow function.
+let object = {
+    myage : 24(),
+    myname : () => {
+        console.log(this);
+    }
+}
+object.myname(); //window
+
+
+
+
 
 
 

@@ -160,3 +160,12 @@ let flatArr = matrix.reduce((acc, currVal) => {
     return acc.concat(currVal)
 });
 console.log(flatArr);
+
+//Array.prototype.{flat,flatMap}: 
+const flatmatrix = [
+    ['a', 'b'],
+    ['c', 'd'],
+    ['e', ['f', 'g']]
+];
+ console.log(flatmatrix.flat()); //by default it flat up to one level
+ console.log(flatmatrix.flat(2)); //infinity will flat infinity times
