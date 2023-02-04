@@ -45,7 +45,17 @@
         <br>
     </form>
     <br>
-    <script src="index.js"></script>
+    <p>Click button to display a date after changing the hours.</p>
+    <button onclick="time()">Try it!</button>
+    <p id="demo"></p>
+    
+    <script>
+        function time(){
+            let t = new Date();
+            t.setHours(5);
+            document.getElementById("demo").innerHTML = t;
+        }
+    </script>
 </body>
 </html>
-
+<script src="index.js"></script>

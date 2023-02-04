@@ -101,6 +101,15 @@ function warning(){
 document.write('<br>');
 
 //Math object: 
+console.log(Math.PI); //3.141592653589793
+console.log(Math.abs(-55.95)); //55.99: converts into positive.
+console.log(Math.ceil(4.4)); //5: It returns the nearest greater value.
+console.log(Math.floor(4.9)); //4: It returns the nearest smaller value.
+console.log(Math.random()); //0.706558865776
+console.log(Math.random()*10); //7.06558865776
+console.log(Math.floor(Math.random()*10)); //7
+console.log(Math.trunc(-99.345)); //-99: it returns before decimal part of a number.
+//NOTE:If the number is positive Math.trunc() & Math.floor() are similar else Math.trunc() is similar to Math.ceil().
 var d = Math.floor(10.99);
 document.write("Math Floor: " + d);
 document.write('<br>');
@@ -153,9 +162,14 @@ console.log(milli); //2023-02-03T16:46:03.301Z
 let milli1 = new Date('2023-02-03T16:46:03.301Z');
 console.log(milli1); //2023-02-03T16:46:03.301Z
 
+let onlyTime = new Date().toLocaleTimeString(); //'9:34:13 AM'
+let onlyDate = new Date().toLocaleDateString(); //'2/4/2023'
+let both = new Date().toLocaleString(); //'2/4/2023, 9:34:13 AM'
+
 document.write(Date());
 document.write('<br>');
 var dt = new Date();
+
 //get method
 document.write("getDay() : "+ dt.getDay());
 document.write('<br>');
@@ -173,6 +187,7 @@ document.write("getSeconds() : "+ dt.getSeconds());
 document.write('<br>');
 document.write("getTime() : "+ dt.getTime()); //It displays time after 1st January 1970 in milliseconds.
 document.write('<br>');
+
 //set method
 document.write('<br>');
 var dts = new Date("Feb 2, 2023 13:37:56");
