@@ -57,5 +57,5 @@ const  sum = (num1) => (num2) => (num3) => console.log(num1+num2+num3);
 
 sum(5)(3)(8);
 
-//Callback Hell, Fetch APIs, Promises/Async-Await, Error Handling in JS.
+//Callback Hell, Fetch APIs, Promises/Async-Await, Error Handling in JS. These are covered with the help of Mini Projects.
 
