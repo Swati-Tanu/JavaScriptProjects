@@ -1,3 +1,3 @@
 # JavaScriptProjects
 
-This repo includes basic but important topics related to JavaScript.
+This repo includes notes of basic but important topics with appropriate explanations related to JavaScript.
